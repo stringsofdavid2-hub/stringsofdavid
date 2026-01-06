@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strings Of David Music Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#1d1b31,#2d2a55);
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 20px;
+    background:
+      radial-gradient(circle at top,#ffb34755,transparent),
+      radial-gradient(circle at bottom,#ff5f6d55,transparent);
+}
+
+.hero-content{
+    max-width:1200px;
+    width:100%;
+    text-align:center;
+}
+
+/* BRAND */
+.brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:45px;
+    margin-bottom:50px;
+}
+
+/* LOGO */
+.brand img{
+    width:260px;
+    max-height:380px;
+    height:auto;
+    filter:drop-shadow(0 0 25px rgba(255,211,110,0.95));
+}
+
+/* NAME */
+.brand-text{
+    text-align:left;
+}
+
+.brand-text h1{
+    font-family:'Playfair Display', serif;
+    font-size:5rem;
+    color:#ffd36e;
+    letter-spacing:2px;
+    text-shadow:0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* TAGLINE */
+.tagline{
+    font-size:2.2rem;
+    font-style:italic;
+    color:#ffe3e6;
+    margin-top:10px;
+    margin-left:8.5ch;
+}
+
+/* WELCOME BOX */
+.welcome-box{
+    max-width:1000px;
+    margin:0 auto;
+    padding:55px;
+    border:3px solid rgba(255,211,110,0.9);
+    border-radius:30px;
+    background:rgba(0,0,0,0.25);
+    box-shadow:0 25px 60px rgba(0,0,0,0.4);
+}
+
+.welcome-box h2{
+    font-size:3.2rem;
+    color:#ffcc70;
+    margin-bottom:30px;
+}
+
+.welcome-box p{
+    font-size:1.9rem;
+    line-height:2.1;
+    color:#f5f5f5;
+}
+
+/* SECTION */
+.section{
+    padding:90px 8%;
+    background:#ffffff;
+    color:#333;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:3.2rem;
+    text-align:center;
+    margin-bottom:60px;
+    color:#2d2a55;
+}
+
+/* MUSIC GRID */
+.music-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.music-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 18px 40px rgba(0,0,0,0.15);
+    transition:transform 0.3s ease;
+}
+
+.music-card:hover{transform:translateY(-12px);}
+
+.music-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.music-card h3{
+    text-align:center;
+    padding:20px;
+    font-size:1.5rem;
+    background:linear-gradient(135deg,#ffb347,#ff5f6d);
+    color:#fff;
+}
+
+/* ABOUT */
+.about{
+    background:linear-gradient(135deg,#2d2a55,#1d1b31);
+    color:#fff;
+}
+
+/* 🔥 FIXED ABOUT HEADER */
+.about h2{
+    font-family:'Playfair Display', serif;
+    font-size:3.4rem;
+    text-align:center;
+    margin-bottom:40px;
+    color:#ffd36e;
+    text-shadow:0 6px 20px rgba(0,0,0,0.6);
+}
+
+.about p{
+    font-size:1.55rem;
+    line-height:2.1;
+    max-width:950px;
+    margin:0 auto;
+    text-align:center;
+    color:#f2f2f2;
+}
+
+/* FOOTER */
+footer{
+    background:#0f0e1a;
+    text-align:center;
+    padding:40px;
+    font-size:1.1rem;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .brand{
+        flex-direction:column;
+        text-align:center;
+    }
+    .brand img{
+        width:170px;
+        max-height:260px;
+    }
+    .brand-text{
+        text-align:center;
+    }
+    .brand-text h1{
+        font-size:3.4rem;
+    }
+    .tagline{
+        font-size:1.6rem;
+        margin-left:0;
+    }
+    .welcome-box{
+        padding:30px;
+    }
+    .welcome-box h2{
+        font-size:2.4rem;
+    }
+    .welcome-box p{
+        font-size:1.35rem;
+    }
+    .about h2{
+        font-size:2.6rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="brand">
+      <img src="harp.png" alt="Strings Of David Logo">
+      <div class="brand-text">
+        <h1>Strings Of David</h1>
+        <div class="tagline">~ where hearts learn to sing</div>
+      </div>
+    </div>
+
+    <div class="welcome-box">
+      <h2>Welcome</h2>
+      <p>
+        Welcome to Strings Of David Music Academy — a place where musical
+        passion meets purpose. We shape talent with discipline, creativity,
+        and joy across keyboard, guitar, ukulele, drums and vocals.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Music In Action</h2>
+  <div class="music-grid">
+    <div class="music-card"><img src="keyboard.jpg"><h3>Keyboard & Piano</h3></div>
+    <div class="music-card"><img src="guitar.jpg"><h3>Guitar</h3></div>
+    <div class="music-card"><img src="ukulele.jpg"><h3>Ukulele</h3></div>
+    <div class="music-card"><img src="drums.jpg"><h3>Drums</h3></div>
+    <div class="music-card"><img src="vocals.jpg"><h3>Vocals</h3></div>
+  </div>
+</section>
+
+<section class="section about">
+  <h2>About Samuel</h2>
+  <p>
+    Samuel is a passionate music educator, appreciated by parents and students
+    for his patience, structured teaching approach, and inspiring mentorship.
+  </p>
+</section>
+
+<footer>
+  © 2026 Strings Of David Music Academy
+</footer>
+
+</body>
+</html>
