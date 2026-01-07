@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses | Strings Of David Music Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Calendly CSS -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.95)), url("music.jpg") no-repeat center/cover;
+    color:#fff;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(0,0,0,0.85);
+}
+.header img{
+    height:140px;
+    margin-bottom:15px;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#ffd700;
+}
+.tagline{
+    font-size:20px;
+    color:#ccc;
+}
+
+/* CONTENT */
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#ffd700;
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* COURSES GRID */
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+}
+
+.course-card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
+.course-card img{
+    width:130px;
+    margin-bottom:15px;
+}
+.course-card h3{
+    color:#ffd700;
+    margin-bottom:10px;
+}
+.course-card p{
+    font-size:16px;
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+/* BUTTONS */
+.demo-btn{
+    display:block;
+    padding:12px 28px;
+    background:#00c853;
+    color:#fff;
+    font-weight:600;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:16px;
+    margin-bottom:10px;
+}
+.demo-btn:hover{ background:#00b248; }
+
+.paid-btn{
+    display:block;
+    padding:12px 28px;
+    background:#ffd700;
+    color:#000;
+    font-weight:600;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:16px;
+}
+.paid-btn:hover{ background:#ffcc00; }
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.85);
+    font-size:14px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .header h1{font-size:32px;}
+    .tagline{font-size:18px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="harp.png" alt="Strings Of David Logo">
+    <h1>Strings Of David Music Academy</h1>
+    <div class="tagline">~ Where hearts learn to sing ~</div>
+</div>
+
+<!-- COURSES -->
+<div class="container">
+    <h2 class="section-title">Our Courses</h2>
+
+    <div class="courses">
+
+        <!-- KEYBOARD -->
+        <div class="course-card">
+            <img src="keyboard.jpg">
+            <h3>Keyboard / Piano</h3>
+            <p>From beginner to advanced piano training with strong fundamentals.</p>
+
+            <a href="#" class="demo-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/demo?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">
+               Book Demo Session
+            </a>
+        </div>
+
+        <!-- GUITAR -->
+        <div class="course-card">
+            <img src="guitar.jpg">
+            <h3>Guitar</h3>
+            <p>Acoustic & electric guitar lessons covering rhythm and lead playing.</p>
+
+            <a href="#" class="demo-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/demo?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">
+               Book Demo Session
+            </a>
+        </div>
+
+        <!-- UKULELE -->
+        <div class="course-card">
+            <img src="ukulele.jpg">
+            <h3>Ukulele</h3>
+            <p>Fun and easy learning with songs and strumming techniques.</p>
+
+            <a href="#" class="demo-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/demo?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">
+               Book Demo Session
+            </a>
+        </div>
+
+        <!-- DRUMS -->
+        <div class="course-card">
+            <img src="drums.jpg">
+            <h3>Drums</h3>
+            <p>Rhythm training, coordination, groove, and performance skills.</p>
+
+            <!-- DEMO -->
+            <a href="#" class="demo-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/demo?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">
+               Book Demo Session
+            </a>
+
+            <!-- PAID -->
+            <a href="#" class="paid-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/one-hour-personal-session-drums'});return false;">
+               Book Paid Slot
+            </a>
+        </div>
+
+        <!-- VOCALS -->
+        <div class="course-card">
+            <img src="vocals.jpg">
+            <h3>Vocals</h3>
+            <p>Voice culture, breathing, pitch accuracy, and confidence.</p>
+
+            <a href="#" class="demo-btn"
+               onclick="Calendly.initPopupWidget({url:'https://calendly.com/stringsofdavid2/demo?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">
+               Book Demo Session
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/918828202463" target="_blank"
+   style="
+   position:fixed;
+   bottom:25px;
+   right:25px;
+   width:60px;
+   height:60px;
+   background:#25D366;
+   color:white;
+   border-radius:50%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size:28px;
+   text-decoration:none;
+   box-shadow:0 4px 6px rgba(0,0,0,0.4);
+">
+&#128222;
+</a>
+
+<footer>
+© 2026 Strings Of David Music Academy
+</footer>
+
+<!-- Calendly JS -->
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+</body>
+</html>

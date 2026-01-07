@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Strings Of David Music Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url("music.jpg") no-repeat center/cover;
+    color:#fff;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(0,0,0,0.7);
+}
+.header img{
+    height:120px;
+    display:block;
+    margin:0 auto 15px auto;
+}
+.header h1{
+    margin:0;
+    font-size:40px;
+    color:#ffd700;
+}
+.tagline{
+    font-size:20px;
+    color:#ccc;
+    margin-top:5px;
+}
+
+/* SECTION */
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    text-align:center;
+    margin-bottom:40px;
+}
+.contact-info h2{
+    font-size:32px;
+    color:#ffd700;
+}
+.contact-info p{
+    font-size:22px;
+    margin:10px 0;
+}
+
+/* GRID */
+.grid{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* FORM */
+.form-box{
+    flex:1;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:15px;
+}
+.form-box h3{
+    font-size:28px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+input, select, textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+button{
+    background:#ffd700;
+    color:#000;
+    padding:14px;
+    width:100%;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+button:hover{
+    background:#e6c200;
+}
+
+/* LOCATIONS */
+.locations{
+    flex:1;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:15px;
+}
+.locations h3{
+    font-size:28px;
+    color:#ffd700;
+}
+.location{
+    margin-bottom:25px;
+}
+.location a{
+    color:#ffd700;
+    text-decoration:none;
+    font-size:18px;
+}
+.location a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.8);
+    font-size:14px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+    .header h1{font-size:32px;}
+    .tagline{margin-left:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="harp.png" alt="Strings Of David Harp Logo">
+    <h1>Strings Of David Music Academy</h1>
+    <div class="tagline">~ Where hearts learn to sing ~</div>
+</div>
+
+<div class="section">
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+    <h2>Call Us & Email</h2>
+    <p>📞 8828202463</p>
+    <p>📧 stringsofdavid@gmail.com</p>
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<!-- FORM -->
+<div class="form-box">
+    <h3>Contact Us</h3>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Contact Number" required>
+
+        <select required>
+            <option value="">Instrument Interested</option>
+            <option>Keyboard / Piano</option>
+            <option>Guitar</option>
+            <option>Ukulele</option>
+            <option>Drums</option>
+            <option>Vocals</option>
+        </select>
+
+        <select required>
+            <option value="">Preferred Location</option>
+            <option>Dombivli West</option>
+            <option>Sion Dharavi</option>
+        </select>
+
+        <textarea rows="4" placeholder="Message (optional)"></textarea>
+        <button type="submit">Send Enquiry</button>
+    </form>
+</div>
+
+<!-- LOCATIONS -->
+<div class="locations">
+    <h3>Our Locations</h3>
+
+    <div class="location">
+        <strong>Dombivli West</strong><br><br>
+        304, Neera Yashwant Heights,<br>
+        Yashwant Nagar, Nemade Galli Road,<br>
+        Juni, Dombivli West,<br>
+        Maharashtra 421202<br><br>
+        <a href="https://www.google.com/maps/search/?api=1&query=Neera+Yashwant+Heights+Dombivli" target="_blank">
+            📍 View on Google Maps
+        </a>
+    </div>
+
+    <div class="location">
+        <strong>Sion Dharavi</strong><br><br>
+        VOC Tower, D403,<br>
+        90 Feet Road, Opp. Kamraj Memorial School,<br>
+        Sion Dharavi, Mumbai,<br>
+        Maharashtra 400017<br><br>
+        <a href="https://www.google.com/maps/search/?api=1&query=VOC+Tower+Sion+Dharavi" target="_blank">
+            📍 View on Google Maps
+        </a>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/918828202463" target="_blank" 
+   style="
+   position:fixed;
+   bottom:25px;
+   right:25px;
+   z-index:1000;
+   background:#25D366;
+   color:white;
+   border-radius:50%;
+   width:60px;
+   height:60px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   box-shadow:0 4px 6px rgba(0,0,0,0.3);
+   text-decoration:none;
+   font-size:28px;
+   ">
+   &#128222;
+</a>
+
+<footer>
+© 2026 Strings Of David Music Academy | All Rights Reserved
+</footer>
+
+</body>
+</html>

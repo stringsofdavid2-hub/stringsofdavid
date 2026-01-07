@@ -1,71 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About – Strings Of David Music Academy</title>
-  <style>
-    body { margin:0; font-family:Arial, Helvetica, sans-serif; line-height:1.6; color:#333; }
-    header { background:#3b2f63; color:#fff; padding:15px 20px; }
-    nav { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:auto; }
-    nav a { color:#fff; text-decoration:none; margin-left:15px; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    .hero { background: linear-gradient(135deg, #4b3f72, #7a5cff); color: #fff; text-align:center; padding:90px 20px; }
-    .hero h1 { font-size:2.5rem; margin-bottom:10px; }
-    .hero p { font-size:1.2rem; font-style:italic; }
-    .section { padding:60px 20px; max-width:1100px; margin:auto; }
-    .section img { display:block; margin:auto; width:180px; border-radius:50%; margin-bottom:20px; }
-    footer { background:#222; color:#ccc; text-align:center; padding:20px; font-size:0.9rem; }
-    @media (max-width:600px) { nav { flex-direction:column; } nav div { margin-top:10px; } .hero h1{font-size:2rem;} }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Strings Of David Music Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url("music.jpg") no-repeat center/cover;
+    color:#fff;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(0,0,0,0.8);
+}
+.header img{
+    height:140px;
+    margin-bottom:15px;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#ffd700;
+}
+.tagline{
+    font-size:20px;
+    color:#ccc;
+}
+
+/* CONTENT */
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+h2{
+    color:#ffd700;
+    text-align:center;
+    margin-bottom:15px;
+}
+p{
+    font-size:18px;
+    line-height:1.8;
+    color:#e0e0e0;
+    text-align:center;
+}
+
+/* REVIEWS FIX */
+.reviews-wrapper{
+    margin-top:50px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    color:#000;
+}
+.reviews-wrapper h2{
+    color:#000;
+    margin-bottom:25px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.85);
+    font-size:14px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .header h1{font-size:32px;}
+    .tagline{font-size:18px;}
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2>Strings Of David</h2>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="contact.html">Contact</a>
+<!-- HEADER -->
+<div class="header">
+    <img src="harp.png" alt="Strings Of David Logo">
+    <h1>Strings Of David Music Academy</h1>
+    <div class="tagline">~ Where hearts learn to sing ~</div>
+</div>
+
+<!-- ABOUT -->
+<div class="container">
+    <h2>About Us</h2>
+    <p>
+        Strings Of David Music Academy is committed to nurturing musical excellence
+        through structured learning, creativity, and performance-based training.
+    </p>
+
+    <h2>About Samuel</h2>
+    <p>
+        Samuel is a dedicated music educator and performer who believes that music
+        is not just learned — it is lived. His teaching approach focuses on discipline,
+        expression, and confidence.
+    </p>
+
+    <!-- REVIEWS (READABLE FIX) -->
+    <div class="reviews-wrapper">
+        <h2>What Parents & Students Say</h2>
+
+        <!-- Elfsight Google Reviews -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-1b349f02-b3d4-4f78-b17d-8214ecef7072"></div>
     </div>
-  </nav>
-</header>
+</div>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>About Strings Of David</h1>
-  <p>Where hearts learn to sing</p>
-</section>
-
-<!-- ABOUT SECTION -->
-<section class="section">
-  <h2>About Me</h2>
-  <img src="yourphoto.jpg" alt="Samuel" />
-  <p style="text-align:center;">
-    Hello! I am <strong>Samuel</strong>, a passionate musician and dedicated teacher. I have been guiding students
-    in Keyboard, Piano, Guitar, Ukulele, Drums, and Vocal training for several years.
-  </p>
-  <p style="text-align:center;">
-    My mission is to help every student discover their musical talent and joy, while building confidence and
-    creativity through music.
-  </p>
-</section>
-
-<section class="section">
-  <h2>Our Academy</h2>
-  <p style="text-align:center;">
-    Strings Of David Music Academy focuses on nurturing musical talent of all ages. We combine strong fundamentals,
-    practical training, and live performance opportunities to create a fun and professional learning environment.
-  </p>
-  <p style="text-align:center;">
-    Every student receives personal attention and structured lessons to grow their skills and love for music.
-  </p>
-</section>
+<!-- WHATSAPP -->
+<a href="https://wa.me/918828202463" target="_blank"
+   style="
+   position:fixed;
+   bottom:25px;
+   right:25px;
+   width:60px;
+   height:60px;
+   background:#25D366;
+   color:white;
+   border-radius:50%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size:28px;
+   text-decoration:none;
+   box-shadow:0 4px 6px rgba(0,0,0,0.4);
+">
+&#128222;
+</a>
 
 <footer>
-  <p>© 2026 Strings Of David Music Academy. All rights reserved.</p>
+© 2026 Strings Of David Music Academy
 </footer>
 
 </body>
