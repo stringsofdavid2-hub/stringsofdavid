@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses | Strings Of David Music Academy</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(rgba(8,8,18,0.93), rgba(8,8,18,0.93)),
+    url("./music.jpg") center/cover no-repeat fixed;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding: 30px 20px;
+}
+
+header img {
+  height: 100px;
+}
+
+header h1 {
+  font-size: 44px;
+  margin: 0;
+  color: #f5c26b;
+}
+
+header p {
+  margin-top: 6px;
+  font-style: italic;
+  color: #ddd;
+}
+
+section {
+  padding: 60px 30px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.course-card {
+  background: rgba(0,0,0,0.7);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
+}
+
+.instrument-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.course-card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 22px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.buttons a {
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.demo-btn {
+  background: #f5c26b;
+  color: #000;
+}
+
+.paid-btn {
+  background: transparent;
+  color: #f5c26b;
+  border: 2px solid #f5c26b;
+}
+
+.demo-btn:hover {
+  background: #ffd98a;
+}
+
+.paid-btn:hover {
+  background: #f5c26b;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="harp.png" alt="Strings Of David Logo">
+  <div>
+    <h1>Strings Of David Music Academy</h1>
+    <p>~ Where hearts learn to sing</p>
+  </div>
+</header>
+
+<section>
+<h2>Our Courses</h2>
+
+<div class="courses">
+
+  <!-- KEYBOARD -->
+  <div class="course-card">
+    <img src="keyboard.jpg" class="instrument-img">
+    <h3>Keyboard / Piano</h3>
+    <p>Structured learning from basics to advanced.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <!-- Paid Personal -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/keyboard-stringsofdavid/30min'});return false;">
+         Personal
+      </a>
+      <!-- Paid Group -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/keyboard-stringsofdavid/personal-sessions-clone'});return false;">
+         Group
+      </a>
+    </div>
+  </div>
+
+  <!-- GUITAR -->
+  <div class="course-card">
+    <img src="guitar.jpg" class="instrument-img">
+    <h3>Guitar</h3>
+    <p>Acoustic & electric guitar training.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <!-- Paid Personal -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/guitar-stringsofdavid/30min'});return false;">
+         Personal
+      </a>
+      <!-- Paid Group -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/guitar-stringsofdavid/group-sessions'});return false;">
+         Group
+      </a>
+    </div>
+  </div>
+
+  <!-- DRUMS -->
+  <div class="course-card">
+    <img src="drums.jpg" class="instrument-img">
+    <h3>Drums</h3>
+    <p>Rhythm, coordination & performance.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <!-- Paid Personal -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/drums-stringsofdavid/30min'});return false;">
+         Personal
+      </a>
+      <!-- Paid Group -->
+      <a href="#"
+         class="paid-btn"
+         onclick="Calendly.initPopupWidget({url:'https://calendly.com/drums-stringsofdavid/personal-session-clone'});return false;">
+         Group
+      </a>
+    </div>
+  </div>
+
+  <!-- UKULELE -->
+  <div class="course-card">
+    <img src="ukulele.jpg" class="instrument-img">
+    <h3>Ukulele</h3>
+    <p>Fun & easy learning for beginners.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <a href="#" class="paid-btn">Paid Session</a>
+    </div>
+  </div>
+
+  <!-- VOCALS -->
+  <div class="course-card">
+    <img src="vocals.jpg" class="instrument-img">
+    <h3>Vocals</h3>
+    <p>Pitch control, breathing & confidence.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <a href="#" class="paid-btn">Paid Session</a>
+    </div>
+  </div>
+
+  <!-- VIOLIN -->
+  <div class="course-card">
+    <img src="violin.jpg" class="instrument-img">
+    <h3>Violin</h3>
+    <p>Classical & contemporary training.</p>
+    <div class="buttons">
+      <a href="#" class="demo-btn">Book Demo</a>
+      <a href="#" class="paid-btn">Paid Session</a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Strings Of David Music Academy
+</footer>
+
+<!-- CALENDLY SCRIPT (LOAD ONCE) -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+</body>
+</html>
